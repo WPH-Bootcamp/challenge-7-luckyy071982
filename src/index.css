@@ -1,1 +1,37 @@
 @import "tailwindcss";
+
+/* @tailwind utilities; */
+
+/* @custom-media --dark (prefers-color-scheme: dark); */
+
+@layer utilities {
+  .font-outfit {
+    font-family: "Outfit", sans-serif;
+  }
+  .font-quicksand {
+    font-family: "Quicksand", sans-serif;
+  }
+  .web-color-orange {
+    color: #ff6c37;
+  }
+  .web-color-gray {
+    color: #a4a7ae;
+  }
+  .desktop-menu-link {
+    margin: 0 16px;
+  }
+}
+
+@keyframes scroll {
+  0% {
+    transform: translateX(0%);
+  }
+  100% {
+    transform: translateX(-50%);
+  }
+}
+
+.animate-scroll {
+  display: inline-flex;
+  animation: scroll 5s linear infinite;
+}
